@@ -1,4 +1,9 @@
 # **Download globe.6B from http://nlp.stanford.edu/data/glove.6B.zip
+import nltk
+nltk.download('stopwords')  # one time execution
+nltk.download('averaged_perceptron_tagger') # one time execution
+nltk.download('punkt')  # one time execution
+nltk.download('stopwords')  # one time execution
 
 import networkx as nx
 from sklearn.metrics.pairwise import cosine_similarity
@@ -11,6 +16,7 @@ from nltk.tokenize import sent_tokenize
 # nltk.download('stopwords')  # one time execution
 from rouge import Rouge
 import json
+
 
 
 def textrank2(uploaded=open('Data/tennis_articles_v4.csv', encoding='utf-8'), lines_in=10, idlSummary=open('Data/ideal-summary.txt').read()):
