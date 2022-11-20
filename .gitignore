@@ -1,0 +1,6 @@
+.DS_Store
+env/
+Code/__pycache__
+Code/old/
+Code/tfidf.py.bak
+*.py[cod]
