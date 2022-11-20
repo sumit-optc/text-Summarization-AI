@@ -11,7 +11,7 @@ import json
 import nltk
 
 
-def func(df=pd.read_csv('Data/txt_csv.csv', encoding='utf-8'), corpus2=None):
+def func(df=pd.read_csv('Data/txt_csv.csv', encoding='utf-8'), num_topics2=3, corpus2=None):
 
     # df = pd.read_csv(file_in)
     corpus = []
@@ -75,7 +75,7 @@ def func(df=pd.read_csv('Data/txt_csv.csv', encoding='utf-8'), corpus2=None):
 
     # Running and Training LDA model on the document term matrix.
 
-    ldamodel = Lda(doc_term_matrix, num_topics=3, id2word=dict_,
+    ldamodel = Lda(doc_term_matrix, num_topics=num_topics2, id2word=dict_,
                    passes=1, random_state=0, eval_every=None)
 
     # Prints the topics with the indexes: 0,1,2 :
