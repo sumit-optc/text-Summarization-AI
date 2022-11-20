@@ -17,7 +17,7 @@ streamlit_style = """
             """
 st.markdown(streamlit_style, unsafe_allow_html=True)
 
-st.title('AI Project')
+st.title('AI Text Summarizer')
 
 tab1, tab2, tab3 = st.tabs(["TFIDF", "Text Rank", "LDA"])
 
