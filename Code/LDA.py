@@ -9,7 +9,10 @@ from gensim import corpora
 from rouge import Rouge
 import json
 import nltk
-
+nltk.download('stopwords')  # one time execution
+nltk.download('averaged_perceptron_tagger') # one time execution
+nltk.download('punkt')  # one time execution
+nltk.download('stopwords')  # one time execution
 
 def func(df=pd.read_csv('Data/txt_csv.csv', encoding='utf-8'), corpus2=None):
 
