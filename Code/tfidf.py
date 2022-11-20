@@ -1,8 +1,9 @@
 import nltk
-nltk.download('stopwords')  # one time execution
-nltk.download('averaged_perceptron_tagger') # one time execution
-nltk.download('punkt')  # one time execution
-nltk.download('stopwords')  # one time execution
+nltk.download('stopwords')
+nltk.download('wordnet')
+nltk.download('omw-1.4')
+nltk.download('averaged_perceptron_tagger')
+nltk.download('punkt')
 import re
 import math
 import operator
