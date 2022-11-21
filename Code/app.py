@@ -4,7 +4,11 @@ import streamlit as st
 import tfidf
 import textrank
 import LDA
-
+import nltk
+nltk.download('stopwords')  # one time execution
+nltk.download('averaged_perceptron_tagger') # one time execution
+nltk.download('punkt')  # one time execution
+nltk.download('stopwords')  # one time execution
 streamlit_style = """
             <style>
             
@@ -13,7 +17,7 @@ streamlit_style = """
             """
 st.markdown(streamlit_style, unsafe_allow_html=True)
 
-st.title('AI Project')
+st.title('AI Text Summarizer')
 
 tab1, tab2, tab3 = st.tabs(["TFIDF", "Text Rank", "LDA"])
 
